@@ -1,0 +1,34 @@
+!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ninja Clash: Volcano Arena</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main-menu">
+      <h1>🥷 Ninja Clash: Volcano Arena 🌋</h1>
+      <p>by <strong>✨ Mezo & ChatGPT ✨</strong></p>
+      <div class="difficulty">
+        <button onclick="startGame('easy')">Easy</button>
+        <button onclick="startGame('medium')">Medium</button>
+        <button onclick="startGame('hard')">Hard</button>
+      </div>
+      <audio id="menuMusic" autoplay loop>
+        <source src="https://cdn.pixabay.com/download/audio/2023/03/29/audio_3e7d69f4f1.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="controls">
+      <button id="attackBtn">⚔️</button>
+      <button id="jumpBtn">⬆️</button>
+      <div id="joystick"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
